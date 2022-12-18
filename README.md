@@ -20,7 +20,6 @@ const client = new NexxApiClient({
   "password": "your_password",
   "username": "your_username",
   "clientId": client_id, // see instructions below
-  "deviceToken": device_token, // see instructions below
 });
 
 // get array of all devices
@@ -30,11 +29,11 @@ const [ firstDevice ] = await client.getDevices();
 const result = await client.open(firstDevice.DeviceId);
 ```
 
-## How to find the client_id and device_token?
+## How to find the client_id?
 
 You will need to use an HTTP Proxy like https://www.charlesproxy.com/ to find your
-`client_id` and `device_token`. Follow the instructions [here](https://www.charlesproxy.com/documentation/using-charles/ssl-certificates/) for whatever device you are using.
+`client_id`. Follow the instructions [here](https://www.charlesproxy.com/documentation/using-charles/ssl-certificates/) for whatever device you are using.
 
-When you log in, there is a POST request to identity-api.simpaltek.com/token. This will have the `client_id` and `device_token` in the request body.
+When you log in, there is a POST request to identity-api.simpaltek.com/token. This will have the `client_id` in the request body.
 
 

@@ -1,6 +1,6 @@
 {
-  "name": "nexx-garage-sdk",
-  "version": "1.1.1",
+  "name": "@jontg/nexx-garage-sdk",
+  "version": "1.2.0",
   "description": "",
   "keywords": [
     "nexx",
@@ -32,6 +32,6 @@
     "request": "^2.88.0"
   },
   "repository": {
-    "url": "https://github.com/tget4/nexx-garage-sdk"
+    "url": "https://github.com/jontg/nexx-garage-sdk"
   }
 }

@@ -1,7 +1,7 @@
 import request from 'request';
 import Constants from './constants';
 
-const DEFAULT_USER_AGENT = 'NexxHome/1.12 (com.simpaltek.nexxhome; build:8; iOS 12.2.0) Alamofire/4.7.3';
+const DEFAULT_USER_AGENT = 'NexxHome/3.8.2 (com.simpaltek.nexxhome; build:3; iOS 16.2.0) Alamofire/4.9.1';
 const DEFAULT_GRANT_TYPE = 'password';
 
 interface NexxApiClientConfig {
