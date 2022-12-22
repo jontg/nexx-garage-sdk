@@ -90,7 +90,7 @@ export default class NexxApiClient {
       AdditionalData: {
         deviceType: 'iOS',
       },
-      AppVersion: '1.12',
+      AppVersion: '3.8.2',
       DeviceId: deviceId,
       Latitude: 0,
       Longitude: 0,
@@ -211,7 +211,11 @@ export default class NexxApiClient {
               reject(err);
             }
           } else {
-            resolve(JSON.parse(getResult.body));
+            try {
+              resolve(JSON.parse(getResult.body));
+            } catch (e) {
+              reject(e);
+            }
           }
         });
         return;
